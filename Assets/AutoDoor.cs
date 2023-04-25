@@ -27,7 +27,7 @@ public class AutoDoor : MonoBehaviour
                }
         }else{
             if(moovingDoor.transform.position.x > maximumClosing){
-                  moovingDoor.transform.Translate(0f, 0f, 20f);
+                  moovingDoor.transform.Translate(0f, 0f, -(movementSpeed * Time.deltaTime));
                }
         }
     }
